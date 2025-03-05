@@ -3,36 +3,68 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family:'Poppins', sans-serif;
 }
 
 :root {
-   --main-bg: palevioletred;
-   --secondary-bg: pink;
+   --bg-primary: palevioletred;
+   --bg-secondary: pink;
+   --txt-primary: #ffff;
+   --txt-secondary: #2222;
 
 }
 
 .container {
     width: 100%;
     height: 100vh;
-    background-color: var(--secondary-bg);
+    background-color: var(--bg-secondary);
 }
 
 .wrapper {
     display: flex;
     width: 100%;
     height: auto;
-    background-color: var(--secondary-bg);
+    background-color: var(--bg-secondary);
    color: var(--main-bg);
    
 }
 
 .card {
-    border: 1px solid white;
-    color: white;
+    border: 2px solid var(--bg-primary);
+    color: var(--txt-primary);
     padding: 32px;
     margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.5);
 }
 
 .text-center {
     text-align: center;
+}
+.title {
+    font-size: 2em;
+}
+
+.description {
+    font-size: .5em;
+    margin-top: 10px;
+}
+
+.icons {
+    font-size: 24px;
+    color: var(--bg-primary);
+    margin-top: 10px;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    
 }
